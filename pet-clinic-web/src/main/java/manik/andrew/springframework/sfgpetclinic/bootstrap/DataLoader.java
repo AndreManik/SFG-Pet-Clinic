@@ -1,7 +1,5 @@
 package manik.andrew.springframework.sfgpetclinic.bootstrap;
 
-import manik.andrew.springframework.sfgpetclinic.map.OwnerServiceMap;
-import manik.andrew.springframework.sfgpetclinic.map.VetServiceMap;
 import manik.andrew.springframework.sfgpetclinic.model.Owner;
 import manik.andrew.springframework.sfgpetclinic.model.Vet;
 import manik.andrew.springframework.sfgpetclinic.services.OwnerService;
@@ -15,9 +13,9 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override
