@@ -1,4 +1,4 @@
-package manik.andrew.springframework.sfgpetclinic.map;
+package manik.andrew.springframework.sfgpetclinic.services.map;
 
 import manik.andrew.springframework.sfgpetclinic.model.Vet;
 import manik.andrew.springframework.sfgpetclinic.services.VetService;
